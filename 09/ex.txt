@@ -1,0 +1,20 @@
+1º Exercício:
+
+a) Escreva uma função "criar_arquivo : string -> int -> unit" que, recebendo um nome de arquivo e um inteiro "n", 
+crie um arquivo de texto com o nome fornecido e contendo "n" linhas não-vazias. Use recursão de cauda, viabilizando,
+ por exemplo, a criação de arquivos com um milhão de linhas.
+
+b) Em seguida, escreva uma função "ler_em_lista : string -> string list option" que receba o nome de um arquivo de texto
+ e que em seguida leia o arquivo linha-a-linha retorne uma lista com as linhas do arquivo... ou quase: como é possível que
+  haja um erro de arquivo (por exemplo, caso não exista um arquivo com o nome fornecido), então a função deve retornar "None" 
+  em caso de erro e "Some L" caso seja possível retornar uma lista "L". Novamente, use recursão de cauda, viabilizando, por exemplo, 
+  a leitura de arquivos com um milhão de linhas. Atenção: essa questão possui uma surpresa interessante; caso você não 
+  consiga viabilizar a leitura de arquivos com, por exemplo, um milhão de linhas, veja a dica ao final desta mensagem.
+
+c) Escreva um programa que use as duas funções acima para criar arquivos de muitas linhas e lê-las do usuário. 
+Você pode usar List.length para imprimir o tamanho da lista gerada.
+
+2º Exercício: Modularize a sua solução do exercício anterior, criando um arquivo auxiliar.ml para as funções 
+criar_arquivo" e "ler_em_lista", bem como para quaisquer funções auxiliares por elas utilizadas, um arquivo programa.ml 
+para o código que usa as duas primeiras funções para criar e ler arquivos. Crie também um arquivo auxiliar.mli 
+que viabilize acesso às funções "criar_arquivo" e "ler_em_lista" mas esconda outras funções presentes no arquivo auxiliar.ml. Compile o seu código com o comando "ocamlopt auxiliar.mli auxiliar.ml programa.ml".

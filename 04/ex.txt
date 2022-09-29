@@ -1,0 +1,221 @@
+scentar a um cadastro de pessoas (abaixo, o que estiver sublinhado é entrada do usuário):
+
+Menu:
+  L: Listar o cadastro inteiro
+  I: Inserir um registro no cadastro
+  S: Sair
+
+No início, o cadastro deve estar vazio:
+
+Digite a opção escolhida (L/I/S): L
+
+Cadastro atual:
+----------------------------------------
+----------------------------------------
+
+Quando o usuário escolher acrescentar/inserir um novo registro, o programa deve ler e gravar o nome e a data de nascimento:
+
+Digite a opção escolhida (L/I/S): I
+
+Leitura de novo registro:
+Nome: Fulano
+Nascimento (DD/MM/AAAA): 29/08/2000
+
+O programa não deve permitir o cadastro de nomes repetidos:
+
+Digite a opção escolhida (L/I/S): I
+
+Leitura de novo registro:
+Nome: Fulano
+Nascimento (DD/MM/AAAA): 02/02/2002
+
+Registro não inserido, nome já existente!
+
+Considere testar também se a data está bem formatada:
+
+Digite a opção escolhida (L/I/S): I
+
+Leitura de novo registro:
+Nome: Cicrano
+Nascimento (DD/MM/AAAA): ...
+Erro na leitura da data, repetindo:
+Nascimento (DD/MM/AAAA): 03/03/2003
+
+Assim como se a opção digitada pelo usuário é válida:
+
+Menu:
+  L: Listar o cadastro inteiro
+  I: Inserir um registro no cadastro
+  S: Sair
+
+Digite a opção escolhida (L/I/S): x
+
+Opção inválida, tente novamente.
+
+Naturalmente, o programa deve mostrar o cadastro inteiro (que já tiver sido digitado) quando o usuário solicitar:
+
+Digite a opção escolhida (L/I/S): L
+
+Cadastro atual:
+----------------------------------------
+Nome: Cicrano
+Nascimento: 03/03/2003
+----------------------------------------
+Nome: Beltrano
+Nascimento: 01/01/2001
+----------------------------------------
+Nome: Fulano
+Nascimento: 29/08/2000
+----------------------------------------
+
+E finalmente o usuário deve poder encerrar o programa:
+
+Menu:
+  L: Listar o cadastro inteiro
+  I: Inserir um registro no cadastro
+  S: Sair
+
+Digite a opção escolhida (L/I/S): S
+
+Segue abaixo uma execução possível do programa solicitado:
+
+Menu:
+  L: Listar o cadastro inteiro
+  I: Inserir um registro no cadastro
+  S: Sair
+
+Digite a opção escolhida (L/I/S): L
+
+Cadastro atual:
+----------------------------------------
+----------------------------------------
+
+Menu:
+  L: Listar o cadastro inteiro
+  I: Inserir um registro no cadastro
+  S: Sair
+
+Digite a opção escolhida (L/I/S): I
+
+Leitura de novo registro:
+Nome: Fulano
+Nascimento (DD/MM/AAAA): 29/08/2000
+
+Menu:
+  L: Listar o cadastro inteiro
+  I: Inserir um registro no cadastro
+  S: Sair
+
+Digite a opção escolhida (L/I/S): L
+
+Cadastro atual:
+----------------------------------------
+Nome: Fulano
+Nascimento: 29/08/2000
+----------------------------------------
+
+Menu:
+  L: Listar o cadastro inteiro
+  I: Inserir um registro no cadastro
+  S: Sair
+
+Digite a opção escolhida (L/I/S): I
+
+Leitura de novo registro:
+Nome: Beltrano
+Nascimento (DD/MM/AAAA): 01/01/2001
+
+Menu:
+  L: Listar o cadastro inteiro
+  I: Inserir um registro no cadastro
+  S: Sair
+
+Digite a opção escolhida (L/I/S): L
+
+Cadastro atual:
+----------------------------------------
+Nome: Beltrano
+Nascimento: 01/01/2001
+----------------------------------------
+Nome: Fulano
+Nascimento: 29/08/2000
+----------------------------------------
+
+Menu:
+  L: Listar o cadastro inteiro
+  I: Inserir um registro no cadastro
+  S: Sair
+
+Digite a opção escolhida (L/I/S): I
+
+Leitura de novo registro:
+Nome: Fulano
+Nascimento (DD/MM/AAAA): 02/02/2002
+
+Registro não inserido, nome já existente!
+
+Menu:
+  L: Listar o cadastro inteiro
+  I: Inserir um registro no cadastro
+  S: Sair
+
+Digite a opção escolhida (L/I/S): L
+
+Cadastro atual:
+----------------------------------------
+Nome: Beltrano
+Nascimento: 01/01/2001
+----------------------------------------
+Nome: Fulano
+Nascimento: 29/08/2000
+----------------------------------------
+
+Menu:
+  L: Listar o cadastro inteiro
+  I: Inserir um registro no cadastro
+  S: Sair
+
+Digite a opção escolhida (L/I/S): I
+
+Leitura de novo registro:
+Nome: Cicrano
+Nascimento (DD/MM/AAAA): ...
+Erro na leitura da data, repetindo:
+Nascimento (DD/MM/AAAA): 03/03/2003
+
+Menu:
+  L: Listar o cadastro inteiro
+  I: Inserir um registro no cadastro
+  S: Sair
+
+Digite a opção escolhida (L/I/S): L
+
+Cadastro atual:
+----------------------------------------
+Nome: Cicrano
+Nascimento: 03/03/2003
+----------------------------------------
+Nome: Beltrano
+Nascimento: 01/01/2001
+----------------------------------------
+Nome: Fulano
+Nascimento: 29/08/2000
+----------------------------------------
+
+Menu:
+  L: Listar o cadastro inteiro
+  I: Inserir um registro no cadastro
+  S: Sair
+
+Digite a opção escolhida (L/I/S): x
+
+Opção inválida, tente novamente.
+
+Menu:
+  L: Listar o cadastro inteiro
+  I: Inserir um registro no cadastro
+  S: Sair
+
+Digite a opção escolhida (L/I/S): S
+
+---

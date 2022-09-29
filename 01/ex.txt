@@ -1,0 +1,20 @@
+  Digite o primeiro operando: 4
+  Digite a operação (+ - * / **): **
+  Digite o segundo operando: 0.5
+
+  Resultado: 2
+
+O programa deve tratar o caso de denominador igual a zero:
+
+  Digite o primeiro operando: 1
+  Digite a operação (+ - * / **): /
+  Digite o segundo operando: 0
+
+  Não é permitido dividir por zero!
+
+O programa também deve tratar operadores inválidos:
+
+  Digite o primeiro operando: 1
+  Digite a operação (+ - * / **): ^
+
+  Operação inválida!

@@ -1,0 +1,47 @@
+1º Exercício: As definições de expressões apresentadas na aula são seguras quanto a tipo: expressões mal-formadas, como somar um inteiro a um booleano, sequer passam pelo compilador, que compara o tipo de cada expressão fornecida com o tipo esperado no contexto em questão. Como comentado em sala, isso contrasta com definições como esta abaixo, que permitem a construção de expressões mal-formadas:
+
+type expr =
+  | Ctb of bool
+  | Conj of expr * expr
+  | Igual of expr * expr
+  | Cti of int
+  | Mais of expr * expr
+  | Se of expr * expr * expr ;;
+
+Assim, por exemplo, de acordo com a definição acima, "Mais (Cti 2, Ctb true)" (sem as aspas) é um termo válido do tipo "expr".
+
+A existência de expressões mal-formadas como essa acima também atrapalha a avaliação das expressões, que fica mais trabalhosa devido à necessidade de lidar com casos excepcionais.
+
+Para verificar que esse é de fato o caso, considere esta definição de "valor"
+
+type valor =
+  | Invalida
+  | Inteiro of int
+  | Booleano of bool ;;
+
+e escreva uma função "aval : expr -> valor" que receba uma expressão e retorne o valor correspondente, que normalmente vai ser um inteiro ou um booleano, mas também pode ser uma indicação de expressão inválida, nos casos de expressões mal-formadas.
+
+Assim, por exemplo, o resultado de
+
+(aval (Se( Conj( Ctb true, Igual( Cti 5, Mais( Cti 2, Cti 3) ) ),
+               Se (Ctb false, Cti 100, Cti 200),
+               Cti 0 )))
+
+deve ser "Inteiro 200", e o resultado de
+
+aval (Mais (Cti 2, Ctb true))
+
+deve ser "Invalida".
+
+2º Exercício: Os tipos de dados algébricos generalizados abrem margem para flexibilidades diversas mantendo a segurança do sistema de tipos. Assim, por exemplo, nós sabemos que as listas de OCaml são homogêneas, no sentido de que guardam sempre elementos de tipos iguais (diferentemente, por exemplo, das listas de Python). Entretanto, a definição abaixo fornece uma alternativa:
+
+type imprimivel = Imp: ('a * ('a -> unit)) -> imprimivel ;;
+
+let l: imprimivel list = [ Imp (3,    print_int);
+                           Imp (3.14, print_float);
+                           Imp ("Oi", print_string) ] ;;
+A ideia do tipo "imprimivel" é que o construtor receberá sempre uma tupla "(v,f)", em que "v" é um valor de algum tipo e "f' é uma função que permite imprimir esse tipo. A lista "l" acima ilustra que, dessa forma, é possível guardar inteiros, floats e strings numa mesma lista, desde que tudo o que desejemos fazer com eles seja imprimi-los.
+
+Como aplicação prática do tipo acima, escreva uma função "imprimir : imprimivel list -> unit" que imprima uma "imprimivel list". No caso da lista "l" acima, por exemplo, deve ser impressa a seguinte linha:
+
+3 :: 3.14 :: Oi :: []

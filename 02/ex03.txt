@@ -1,0 +1,3 @@
+Exercício 3: Defina a função "substituir" do exercício 1 não mais de maneira direta, 
+mas sim usando a função "mapear" do exercício 2. A função "substituir" deve continuar 
+recebendo os mesmos argumentos e levar aos mesmos resultados finais. Naturalmente, a função "mapear" deve ser usada conforme está na resposta anterior, sem modificações.

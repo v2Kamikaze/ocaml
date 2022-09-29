@@ -1,0 +1,18 @@
+Exercício para Casa da Aula 07: Escreva um programa que leia um arquivo de texto com notas no formato abaixo (CSV simples)
+
+Fulano,10,8,9.3
+Beltrano,7,8.6,9
+Cicrano,8,8.1,10
+
+e que gere um arquivo de texto com as médias no formato abaixo:
+
+Fulano,9.1
+Beltrano,8.2
+Cicrano,8.7
+
+Exemplo de execução do programa (digitação do usuário sublinhada):
+
+Nome do arquivo com as notas de entrada: notas.txt
+Nome do arquivo a ser criado com as médias: medias.txt
+
+A quantidade de notas por pessoa não é conhecida a priori, ou seja, podem ser mais ou menos do que 3 notas por pessoa, mas será sempre pelo menos uma prova e a mesma quantidade para todas as pessoas.

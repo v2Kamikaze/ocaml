@@ -1,0 +1,11 @@
+Exercício 1: Escreva uma função que receba uma lista "l" de inteiros, bem como inteiros "a" e "b", e que 
+"substitua a por b" na lista, isto é, que retorne a variação de "l" em que as ocorrências de "a" são substituídas por ocorrências de "b".
+
+Exemplo:
+
+print_endline
+  begin
+  if (substituir [1;2;3;1;2;3;3;3;2;2;1;1] 2 0) = [1;0;3;1;0;3;3;3;0;0;1;1] then 
+    "Ok"
+  else "Algo errado"
+end

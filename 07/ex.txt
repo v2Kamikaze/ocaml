@@ -1,0 +1,18 @@
+Exercício 1:
+
+a) Usando o operador de concatenação de listas "@", escreva uma função "inverter_ing" que inverta uma lista "l" qualquer (inverter_ing : 'a list -> 'a list). Exemplo: inverter_ing [1;2;3;4;5] = [5; 4; 3; 2; 1].
+
+b) A resposta esperada para o item anterior é uma função simples mas que executa em tempo O(n²) para uma lista de "n" elementos (o "ing" significa "ingênua"). Assim sendo, sem usar a operação de concatenação de listas, escreva agora uma função "inverter" que realize a mesma tarefa mas em tempo linear.
+
+Exercício 2: Escreva uma função "ord_por_insercao : 'a list -> 'a list" que ordene uma lista em ordem crescente usando o algoritmo de ordenação por inserção ("insertion sort").
+
+---
+
+Assuntos abordados na aula de hoje: conforme pode ser conferido nas fotos anexadas ao SIGAA, nós abordamos:
+
+Introdução ao Polimorfismo Paramétrico via variante polimórfica para indicar dado ou erro.
+Exemplo de aplicação simultânea de match a mais de um valor.
+Exemplo de registro polimórfico.
+O tipo option.
+Tipos algébricos recursivos polimórficos. Exemplos: Dicionário e Pilha.
+Solução do exercício 3 da aula 4: "separar_em_listas".

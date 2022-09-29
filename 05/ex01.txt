@@ -1,0 +1,2 @@
+Exercício 1: Partindo do tipo "arvore" definido na aula de hoje, defina uma função "remover : int -> arvore -> arvore" que receba um inteiro "i" e 
+uma árvore binária de busca "arv" e que retorne o resultado da remoção de "i" em "arv". Teste sua função.

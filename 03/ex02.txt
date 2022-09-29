@@ -1,0 +1,7 @@
+Usando a função selecionar do exercício anterior, escreva uma função "remover_da_lista x l" que, intuitivamente, 
+"remova da lista l as ocorrências de x", ou, mais precisamente, que retorne a variação de "l" em que não aparecem as ocorrências de "x" (afinal, listas são imutáveis em OCaml).
+Atenção: É necessário usar a função selecionar, assim como fizemos em sala para definir a função "maximo_lista" (no caso, usando "fold"). Em particular, a definição de "remover_da_lista" deve ser feita sem "let rec".
+
+Exemplo: o código remover_da_lista 1 [1; 2; 3; 1; 2; 1] ;;
+
+deve resultar em [2; 3; 2].

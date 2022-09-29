@@ -1,0 +1,11 @@
+Exercício 2: Defina um tipo "expressao" para representar expressões aritméticas simples, compostas de nada mais que float's, somas e subtrações, como no exemplo abaixo, que representa a expressão "3. +. (1. -. 10.)":
+
+   +.
+  /  \
+ /    \
+3.    -.
+     /  \
+    1.  10.
+Em seguida, defina uma função "avaliar : expressao -> float" que receba uma expressão e que a avalie, retornando seu resultado como um "float".
+
+Assim, por exemplo, o resultado da expressão acima é "-6.".

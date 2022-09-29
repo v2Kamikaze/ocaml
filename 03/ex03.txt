@@ -1,0 +1,6 @@
+Exercício 3: Escreva uma função "separar_em_listas" que receba uma lista "l" de pares (tuplas de 2 elementos) e 
+que retorne uma única tupla de 2 listas, a primeira lista contendo os primeiros elementos das tuplas de "l", e a segunda lista contendo os segundos elementos das tuplas de "l".
+
+Exemplo: O código separar_em_listas [ (1, "Um"); (2, "Dois"); (3, "Três") ]
+
+deve resultar em ( [1; 2; 3], ["Um"; "Dois"; "Três"] ).

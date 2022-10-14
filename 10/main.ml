@@ -10,7 +10,7 @@ module type Data =
   val string_of_data: t -> string
   val data_of_string: string -> t option
   val dia_seguinte: t -> t
-  end
+  end;;
 
 module DataTupla : Data = 
   struct
